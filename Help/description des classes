@@ -1,8 +1,23 @@
 Liste des classes : 
 
 Element : classe abstraite
+	
 
 une classe par élement qui héritent toutes de la classe Element  
 
-Niveau : contient un tableau 2d d'éléments qui représente la map
+Niveau : 
+	Attributs : 
+		String name
+		int caveTime
+		int diamondsRequired (peutêtre 2 valeurs)
+		int diamondValue (peutêtre 2 valeurs)
+		int amoebaTime
+		int magicWallTime = 0
+		(int hauteurNiveau, largeurNiveau)
+		Element[][] map
+		
+	Fonctions :
+		un constructeur qui charge le fichier
+		void afficher()
+		void mettreAJour() //Fait bouger les éléments en fesant tous les test nécessaires 
 	 
