@@ -1,0 +1,6 @@
+package com.sdz.decors;
+import com.sdz.main.Element;
+
+finalpublic class TitaneMur extends Element {
+
+}

@@ -1,0 +1,29 @@
+package test;
+import java.awt.*;
+import java.awt.event.*;
+
+public class testelect extends java.applet.Applet implements KeyListener {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		hello();
+		
+
+	}
+	public void init() {
+		 addKeyListener(this);
+		}
+	public void hello(){
+		keyPressed(null);
+	}
+	public void keyPressed(KeyEvent evt) {
+		char Caract = evt.getKeyChar();
+		System.out.print(Caract);
+	}
+
+}
+
+
+
+
+

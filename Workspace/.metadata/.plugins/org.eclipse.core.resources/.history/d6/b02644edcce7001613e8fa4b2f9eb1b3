@@ -1,0 +1,21 @@
+package com.sdz.main;
+import com.sdz.decors.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public abstract class Element extends java.applet.Applet implements KeyListener
+ {
+	
+	char Caract = evt.getKeyChar();
+	char idcharactere;
+	int x;
+	int y;
+	
+	public void init() {
+		 addKeyListener(this);
+		}
+	
+public void keyPressed(KeyEvent evt) {
+	
+}
+}

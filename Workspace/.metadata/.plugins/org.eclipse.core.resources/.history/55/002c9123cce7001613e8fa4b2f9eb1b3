@@ -1,0 +1,64 @@
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.TextField;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class testselect extends Frame{
+        static final long serialVersionUID = 1l; // Mauvaise facon mais j'aime pas les Warnings
+        private TextField tf;
+        
+        public void Test(){
+                this.setLayout(new GridLayout(1,1)); // Layout
+                this.tf = new TextField(); // Un textfield
+                this.tf.setEditable(false); // non editable
+                this.tf.addKeyListener(new RecepteurClavier()); // auquel on rajoute un recepteur clavier
+                this.add(this.tf); // Ajout de ce textfield a la fenetre
+                this.pack(); // adaptation de la taille
+                this.addWindowListener(new WindowAdapter(){ // Permet de fermer la frame
+                        public void windowClosing(WindowEvent e){System.exit(0);}
+                });
+                this.setVisible(true); // affichage
+        }
+        public TextField getTf(){return this.tf;};
+
+        public static void main(String[] args){ new Test(); }
+        
+        public class RecepteurClavier implements KeyListener{
+                /**
+                 * Touche enfoncée
+                 * @param event
+                 */
+                public void keyPressed(KeyEvent event){
+                        int source = event.getKeyCode();
+                        Test testActu = Test.this;
+                        if(source==KeyEvent.VK_UP)
+                                testActu.getTf().setText("Haut");
+                        else if(source==KeyEvent.VK_DOWN)
+                                testActu.getTf().setText("Bas");
+                        else if(source==KeyEvent.VK_RIGHT)
+                                testActu.getTf().setText("Droite");
+                        else if(source==KeyEvent.VK_LEFT)
+                                testActu.getTf().setText("Gauche");
+                 }
+                
+                /**
+                 * Touche relachée
+                 * @param event
+                 */
+                 public void keyReleased(KeyEvent event){}
+                 
+                 /**
+                  * Cractere tappé
+                  * @param event
+                  */
+                 public void keyTyped(KeyEvent event){}
+                
+        }
+
+}
+ 
+Partager sur Facebook
+ 

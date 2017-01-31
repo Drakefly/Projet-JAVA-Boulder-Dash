@@ -1,20 +1,39 @@
 package com.sdz.mobs;
 import com.sdz.main.Mobs;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
 
-public class Rockford extends Mobs{
+final public class Rockford extends Mobs{
 
 	static void seDeplace(){
+		boolean abouge=false;
 		//Sélectionne la direction (Surement autre fonction)
-		int direction =choisirdirection();
-		//Verif si c'est possible
+		Scanner sc= new Scanner(System.in);
+		
+		do{
+			int direction =sc.nextInt();//8456 up le dw ri
+			//Verif si c'est possible
+			switch (direction){
+			case 8:
+			
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			default:
+				abouge=false;
+			}
+		}while(!abouge);
+		
 		//Actions
 		
 	}
-	static int choisirdirection(){
-		int direction = 0;
-		//TODO temps réel??
-		return direction;
-	}
+		
+	
 	boolean victoire(){
 		//TODO Verif si c'est gagné
 		return false;
