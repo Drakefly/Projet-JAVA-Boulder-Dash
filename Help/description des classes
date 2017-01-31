@@ -1,0 +1,8 @@
+Liste des classes : 
+
+Element : classe abstraite
+
+une classe par élement qui héritent toutes de la classe Element  
+
+Niveau : contient un tableau 2d d'éléments qui représente la map
+	 
