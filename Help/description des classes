@@ -1,0 +1,39 @@
+Liste des classes : 
+
+Element : classe abstraite
+	Attributs :
+		char characterecorrespondant
+	
+	Fonctions:
+		NE RIEN METTRE TRAITER AU CAS PAR CAS
+		
+		
+	
+
+une classe par élement qui héritent toutes de la classe Element  
+
+Niveau : 
+	Attributs : 
+	//Constante
+		String name
+		int caveTime
+		int diamondsRequired (peutêtre 2 valeurs)
+		int diamondValue (peutêtre 2 valeurs)
+		int amoebaTime
+		int magicWallTime =
+		(int hauteurNiveau, largeurNiveau)
+		Element[][] map
+		
+		int timer
+		int score
+		int diams
+		
+		
+	Fonctions :
+		un constructeur qui charge le fichier
+		void afficher()
+		void mettreAJour() //Fait bouger les éléments en fesant tous les test nécessaires 
+
+		
+
+	 
