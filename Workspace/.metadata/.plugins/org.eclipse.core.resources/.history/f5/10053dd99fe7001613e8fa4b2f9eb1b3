@@ -1,0 +1,6 @@
+package com.sdz.mobs;
+import com.sdz.main.Element;
+
+public class Luciole extends Mobs{
+
+}

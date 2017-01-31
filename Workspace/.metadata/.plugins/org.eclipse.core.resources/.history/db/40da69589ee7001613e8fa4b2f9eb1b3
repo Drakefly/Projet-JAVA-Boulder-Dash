@@ -1,0 +1,5 @@
+package decors;
+
+public class Mur extends Element{
+
+}

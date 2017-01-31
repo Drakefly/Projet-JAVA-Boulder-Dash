@@ -1,0 +1,6 @@
+package decors;
+
+
+public class Diamant extends Element{
+
+}

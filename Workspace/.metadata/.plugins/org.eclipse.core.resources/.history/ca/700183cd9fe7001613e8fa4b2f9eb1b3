@@ -1,0 +1,5 @@
+package com.sdz.mobs;
+
+public class Libellule extends Mobs{
+
+}

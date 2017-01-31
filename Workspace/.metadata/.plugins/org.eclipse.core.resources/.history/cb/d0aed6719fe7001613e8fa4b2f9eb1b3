@@ -1,0 +1,5 @@
+package com.sdz.decors;
+
+public class Espace extends Element{
+
+}

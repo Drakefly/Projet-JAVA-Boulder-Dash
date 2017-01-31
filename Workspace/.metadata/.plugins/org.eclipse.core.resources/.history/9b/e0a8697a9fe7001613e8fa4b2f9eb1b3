@@ -1,0 +1,6 @@
+package com.sdz.decors;
+
+
+public class Diamant extends Element{
+
+}

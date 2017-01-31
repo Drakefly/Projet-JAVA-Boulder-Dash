@@ -1,0 +1,4 @@
+import com.sdz.mobs.*;
+public class Mobs extends Element{
+
+}

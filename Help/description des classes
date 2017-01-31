@@ -6,13 +6,15 @@ Element : classe abstraite
 	
 	Fonctions:
 		NE RIEN METTRE TRAITER AU CAS PAR CAS
+
+Mobs: classe abstraite comprenant tous les personages vivants
 		
 		
 	
 
 une classe par élement qui héritent toutes de la classe Element  
 
-Niveau : 
+Map : 
 	Attributs : 
 	//Constante
 		String name
