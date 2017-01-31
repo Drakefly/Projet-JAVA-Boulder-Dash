@@ -1,0 +1,7 @@
+package com.sdz.main;
+import com.sdz.decors.*;
+protected abstract class Element {
+	char idcharactere;
+	int x;
+	int y;
+}
