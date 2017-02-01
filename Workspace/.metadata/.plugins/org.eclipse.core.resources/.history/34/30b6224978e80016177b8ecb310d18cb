@@ -1,0 +1,10 @@
+package com.sdz.main;
+
+public class Roc extends TypeCase {
+	int x;
+	int y;
+	boolean chute;
+	public Roc (){
+		
+	}
+}

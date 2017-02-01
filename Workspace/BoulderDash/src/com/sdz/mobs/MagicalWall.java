@@ -1,6 +1,5 @@
 package com.sdz.mobs;
 
-public final class MagicalWall {
+public final class MagicalWall implements Explosion{
 
 }
-implements Explosion

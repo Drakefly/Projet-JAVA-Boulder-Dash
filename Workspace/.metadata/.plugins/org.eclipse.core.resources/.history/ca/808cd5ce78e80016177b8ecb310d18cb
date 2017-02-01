@@ -9,7 +9,7 @@ public class Map {
 	private int diamondValue; //= valeur du diamant + le bonus
 	private int amoebaTime;
 	private int magicWallTime;
-	private Object [][] laMap;
+	private char[][] laMap;
 	
 	public Map(String name, ArrayList<Integer> caveTime, int diamondsRequired, ArrayList<Integer> diamondValue, int amoebaTime, int magicWallTime, ArrayList<String> laMap){
 		this.name = name;
@@ -20,12 +20,11 @@ public class Map {
 		for(int i = 0 ; i < diamondValue.size() ; i++) this.diamondValue += diamondValue.get(i);
 		this.amoebaTime = amoebaTime;
 		this.magicWallTime = magicWallTime;
-		this.laMap = new Object[laMap.size()][laMap.get(0).length()];
+		this.laMap = new char[laMap.size()][laMap.get(0).length()];
 		//création du tableau aux bonnes dimensions et double boucle pour le remplir
 		for(int j = 0 ; j < laMap.size() ; j++){
 			for(int i = 0 ; i < laMap.get(j).length() ; i++){
 				this.laMap[j][i] = formatageCaractere(laMap.get(j).charAt(i));
-				//Ici on a une map de caractere mais on veut une map d'elements
 			}
 		}
 	}
